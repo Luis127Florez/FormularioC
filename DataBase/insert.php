@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 
 require 'Database.php';
 
@@ -20,4 +20,25 @@ echo json_encode(array('cadena' => $cadena ));
 
 
 
- ?>
+ ?> -->
+
+
+ <?php
+require 'DataBase.php';
+
+$tipo = $_POST['Tipo_C'];
+$nombre = $_POST['Nombre_D'];
+$area = $_POST['Area'];
+$fecha = $_POST['Fecha_C'];
+
+
+$cadena = "INSERT INTO contactos (Tipo_de_Contacto, Nombre_Completo, Area, Fecha_Contacto) VALUES ";
+
+for ($i = 0; $i < count($tipo); $i++) {
+    $cadena.="('".$tipo[$i]."', '".$nombre[$i]."', '".$area[$i]."', '".$fecha[$i]."'),";
+
+}
+
+echo json_encode(array('cadena' => $cadena));
+
+?>

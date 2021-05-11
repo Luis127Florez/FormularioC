@@ -57,82 +57,82 @@
         <label for="inputAddress2">Fecha de Diagnosticacion</label>
           <input type="date" class="form-control" name="Fecha_D" id="Fecha_D" placeholder="Numero de Identificacion">
            </div>
-           <!--<div class="form-group">
+          <!-- <div class="form-group">
             <label for="exampleFormControlFile1">imagen</label>
             <input type="file" class="form-control-file" name="imagen" id="imagen">
-          </div>-->
-           <br>
+          </div> -->
+          <br>
           
              
 </div>
 
+</form>
+
 <br>
 <br>
 <br>
-<center>
-<div class="container" style="max-width: 1033px;">
+<form action="" id="form_insert">
+  <div class="container" style="max-width: 1033px;">
 
-    <label for="" class="cedula_s">Ingrese la informacion de las personas con las cuales estubo en contacto.<br><br>
-              <table class="table table-bordered" id="tablaC">    
-                <thead>
-                  <tr>
-                    <th>Tipo de contacto</th>
-                    <th>Nombre Completo</th>
-                    <th>Area</th>
-                    <th>Fecha de Contacto</th>
-                    <th></th>
-                  </tr>
-                </thead>      
-                <tbody id="tableTbody">
-                  <tr class="tr">
-                    <td><select  required name="Tipo_C[0]" id="Tipo_C[0]" class="form-select" aria-label="Default select example">
-                    <option selected>Despliega para</option>
-                    <option value="D1">One</option>
-                    <option value="D2">Two</option>
-                    <option value="D3">Three</option>
-                     </select></td>
-                    <td><input type="text"  class="form-control" id="Nombre_D[0]" required name="Nombre_D[0]"></td>
-                    <td><input type="text"  class="form-control" id="Area[0]" required name="Area[0]"></td>
-                    <td><input type="date"  class="form-control" id="Fecha_C[0]"  required name="Fecha_C[0]"></td>
-                    <td><button type="button" class="btn btn-danger clickEliminar"onclick="deleteRow(this) "id="softwarePrimero">Eliminar</button></td>
-                  </tr>
-                </tbody>
-              </table>
-              <div style="text-align: right">
-                <button type="button" class="btn btn-success" onclick="agregarFila()" id="BtnMas">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                 </svg>
-                </button>
-              </div>    
-            </div>
+      <label for="" class="cedula_s">Ingrese la informacion de las personas con las cuales estubo en contacto.<br><br>
+                <table class="table table-bordered" id="tablaC">    
+                  <thead>
+                    <tr>
+                      <th>Tipo de contacto</th>
+                      <th>Nombre Completo</th>
+                      <th>Area</th>
+                      <th>Fecha de Contacto</th>
+                      <th></th>
+                    </tr>
+                  </thead>      
+                  <tbody id="tableTbody">
+                    <tr class="tr">
+                      <td>
+                         <select required name="Tipo_C[]" class="form-select">
+                           <option selected>Despliega para</option>
+                           <option value="D1">One</option>
+                           <option value="D2">Two</option>
+                           <option value="D3">Three</option>
+                         </select>
+                     </td>
+                      <td>
+                        <input type="text" required name="Nombre_D[]" id="" class="form-control">
+                      </td>
+                      <td>
+                        <input type="text" required name="Area[]" id="" class="form-control">
+                      </td>
+                      <td>
+                        <input type="date" required name="Fecha_C[]" id="" class="form-control">
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-danger clickEliminar"onclick="deleteRow(this) "id="softwarePrimero">Eliminar</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div style="text-align: right">
+                  <button type="button" class="btn btn-success" onclick="agregarFila()" id="BtnMas">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                   <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                   </svg>
+                  </button>
+                </div>    
+  </div>
 
-
-</center>
-
-
-
-</div>
 <br>
 <div class="container" style="margin-left: 15%;">
- <button id="Guardar" type="submit" class="btn btn-primary">Guardar</button>
+<input type="submit" value="Guardar" class="btn btn-primary">
  </div>
 
 </form>
 
-
-
 </body>
-
-
-
 
 
       <footer>
         <script type="text/javascript" src="js/archivos/alertify.js"></script>
         <script type="text/javascript" src="js/archivos/alertify.min.js"></script>
-        <script type="text/javascript" src="js/archivos/defaults.js"></script>
+        <script type="text/javascript" src="js/archivos/defaults.js"></script> -->
         <script type="text/javascript" src="js/archivos/jquery-3.1.1.js"></script>
         <script type="text/javascript" src="js/archivos/jquery.validate.js"></script>
-      </footer>
 </html>
